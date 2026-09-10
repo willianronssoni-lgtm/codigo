@@ -1,0 +1,16 @@
+class Produto:
+
+
+   def __init__(self, nome, preco, estoque):
+       self.nome = nome
+       self.preco = preco
+       self.estoque = estoque
+
+
+produto1 = Produto("suco tang", 1000000, "sim" )
+
+
+produto2 = Produto("guarda chuva de chocolate", 10000000, "não")
+print(produto1.nome, produto1.preco, produto1.estoque)
+print(produto2.nome, produto2.preco, produto2.estoque)
+
