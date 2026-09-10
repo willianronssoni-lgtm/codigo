@@ -1,0 +1,27 @@
+class Aluno:
+   def __init__(self, nome, nota):
+       self.nome = nome
+       self.nota = nota
+
+
+   def aprovado(self):
+       if self.nota >= 6:
+           return True
+       else:
+           return False
+
+
+Estudante = Aluno("Juisvaldo da Silva", 0.5)
+print(Estudante.nome, "- aprovado?", Estudante.aprovado())
+
+
+class Retangulo:
+    def __init__(self, largura, altura):
+        self.largura = largura
+        self.altura = altura
+    def calcularPerimetro(self):
+        return 2 * (self.largura + self.altura)
+if __name__ == "__main__":
+    meu_retangulo = Retangulo(7.0, 10.0)
+    perimetro = meu_retangulo.calcularPerimetro()
+    print(f"Largura: {meu_retangulo.largura}")
