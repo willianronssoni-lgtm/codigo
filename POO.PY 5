@@ -1,0 +1,43 @@
+
+class ContaBancaria:
+    def __init__(self, saldo_inicial=0.0):
+
+
+        self.__saldo = saldo_inicial
+
+
+    def depositar(self, valor):
+   
+        if valor > 0:
+            self.__saldo += valor
+            print(f"Depósito de R$ {valor:.2f} realizado com sucesso!")
+        else:
+            print("O valor do depósito deve ser maior que zero.")
+
+
+    def consultarSaldo(self):
+       
+        return self.__saldo
+
+
+
+
+if __name__ == "__main__":
+    minha_conta = ContaBancaria(100.0)
+   
+
+
+    print(f"Saldo inicial: R$ {minha_conta.consultarSaldo():.2f}")
+   
+ 
+
+
+    minha_conta.depositar(50.0)
+    print(f"Saldo após depósito: R$ {minha_conta.consultarSaldo():.2f}")
+   
+
+
+    minha_conta.__saldo = 1000000.0
+   
+   
+    print(f"Saldo real protegido: R$ {minha_conta.consultarSaldo():.2f}")
