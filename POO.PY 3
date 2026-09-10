@@ -25,3 +25,5 @@ if __name__ == "__main__":
     meu_retangulo = Retangulo(7.0, 10.0)
     perimetro = meu_retangulo.calcularPerimetro()
     print(f"Largura: {meu_retangulo.largura}")
+    print(f"Altura: {meu_retangulo.altura}")
+    print(f"O perímetro do retângulo é: {perimetro}")
